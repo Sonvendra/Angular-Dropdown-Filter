@@ -1,11 +1,63 @@
-.container{
-    width: 400px;
-    margin: auto;
-    ng-select{
-        width: 100%;
+.container {
+  width: 400px;
+  margin: auto;
+  ng-select {
+    width: 100%;
+  }
+  .cityName {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+::ng-deep .ng-select {
+  :hover {
+    background-color: #74d143;
+  }
+  .ng-input:hover {
+    background-color: transparent;
+  }
+  .ng-option-label:hover {
+    background-color: inherit;
+    color: #000;
+  }
+  .ng-select-container {
+    border-radius: 15px;
+    height: inherit !important;
+    :hover {
+      background: transparent;
     }
-    .cityName{
-        font-size: 14px;
-        margin-top: 20px;
+  }
+
+  .ng-dropdown-panel {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .ng-dropdown-panel .scroll-host {
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .ng-has-value {
+    border-radius: 15px;
+    background-color: #184e45;
+    .ng-value-label {
+      color: #fff;
     }
+    .ng-clear-wrapper {
+      color: #fff;
+    }
+    .ng-arrow {
+      border-color: #fff transparent transparent;
+    }
+  }
 }
